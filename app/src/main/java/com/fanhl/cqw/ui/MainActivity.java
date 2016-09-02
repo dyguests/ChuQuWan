@@ -1,5 +1,7 @@
 package com.fanhl.cqw.ui;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,6 +21,11 @@ import com.fanhl.cqw.R;
 import com.fanhl.cqw.ui.base.BaseActivity;
 
 public class MainActivity extends BaseActivity {
+
+    public static void launch(Context context) {
+        Intent intent = new Intent(context, MainActivity.class);
+        context.startActivity(intent);
+    }
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
