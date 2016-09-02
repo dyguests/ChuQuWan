@@ -28,7 +28,7 @@ public class SplashActivity extends BaseActivity {
         if (checkNotNull(isFirstLaunch.get())) {
             NewActivity.launch(this);
         } else {
-            MainActivity.launch(SplashActivity.this);
+//            MainActivity.launch(SplashActivity.this);
         }
         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
