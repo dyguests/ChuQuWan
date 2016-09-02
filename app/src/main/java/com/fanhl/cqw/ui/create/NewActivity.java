@@ -1,4 +1,4 @@
-package com.fanhl.cqw.ui;
+package com.fanhl.cqw.ui.create;
 
 import android.content.Context;
 import android.content.Intent;
@@ -27,10 +27,10 @@ public class NewActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new);
-        assginViews();
+        assignViews();
     }
 
-    private void assginViews() {
+    private void assignViews() {
         this.playOutsideBtn = (Button) findViewById(R.id.play_outside_btn);
         this.initiateActivitiesBtn = (Button) findViewById(R.id.initiate_activities_btn);
         this.skipTv = (TextView) findViewById(R.id.skip_tv);
@@ -41,7 +41,7 @@ public class NewActivity extends BaseActivity {
     }
 
     private void playOutside(View view) {
-
+        QueryActivity.launch(this);
     }
 
     private void initiateActivities(View view) {

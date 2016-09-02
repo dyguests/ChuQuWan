@@ -19,13 +19,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.NewActivity"
+            android:name=".ui.create.NewActivity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
             android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".ui.create.QueryActivity">
         </activity>
     </application>
 

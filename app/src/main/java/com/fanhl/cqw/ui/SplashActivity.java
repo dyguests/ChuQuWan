@@ -6,10 +6,14 @@ import android.os.Handler;
 import com.f2prateek.rx.preferences.Preference;
 import com.fanhl.cqw.R;
 import com.fanhl.cqw.ui.base.BaseActivity;
+import com.fanhl.cqw.ui.create.NewActivity;
 import com.fanhl.util.RxSPUtil;
 
 import static com.fanhl.util.Preconditions.checkNotNull;
 
+/**
+ * 登录时的logo,跳转页
+ */
 public class SplashActivity extends BaseActivity {
 
     private Preference<Boolean> isFirstLaunch;
